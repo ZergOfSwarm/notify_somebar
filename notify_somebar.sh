@@ -1,11 +1,11 @@
 #!/bin/bash
-IP_LEIKKIKUJA='10.19.0.22'
+IP_LEIKKIKUJA='192.168.18.100'
 port=9753 # Указываем порт. Такой же порт должен быть и в скрипте Run_somebar.sh!
 flag='false' # Флаг опущен.
-LOCATION="/home/denis/Desktop/" # Указываем путь для удаления лог файла.
+LOCATION="/home/denis/" # Указываем путь для удаления лог файла.
 REQUIRED_FILES="test.log" # Указываем как называется файл который нужно удалить.
 minuts=300 # Указываем количество минут по истеченни котрых удаляем лог файл. (1440 - сутки)
-LOGFILE="/home/denis/Desktop/test.log"
+LOGFILE=$LOCATION/"my_test.log"
 #time_now=$(date +"%H:%M:%S %d-%m-%Y")
 
 green() { #https://stackoverflow.com/questions/12137431/test-if-a-command-outputs-an-empty-string
